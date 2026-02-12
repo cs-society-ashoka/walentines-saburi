@@ -26,6 +26,8 @@ export const config = {
     "photos/IMG_9873 - Saburi Kapoor.jpeg",
   ],
 
+  logo: "photos/logo.png",
+
     /** Audio URL for Mixtape background music */
   audioUrl: "audio/Stephen Sanchez - Until I Found You (Official Video).mp3",
 
