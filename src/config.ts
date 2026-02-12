@@ -5,29 +5,29 @@
 
 export const config = {
   /** Your name */
-  senderName: "Alex",
+  senderName: "Saburi",
 
   /** Your Valentine's name */
-  recipientName: "Jordan",
+  recipientName: "Piyush",
 
   /** Your personal message (used in Mixtape lyrics, Sealed Letter, etc.) */
   message:
-    "From the first moment I saw you, I knew something was different. Every laugh we share, every late-night conversation, every silly moment — they all mean the world to me. You make ordinary days feel extraordinary.",
+    "You make me feel special in ways that I could never think of. I love you, Piyush❤️ Happy Valentine's, baby 🤭🥰",
 
   /** Photo URLs for photo-heavy templates (Memory Cloud, Mixtape, 90s Desktop) */
   photos: [
-    "https://picsum.photos/seed/val1/400/400",
-    "https://picsum.photos/seed/val2/400/400",
-    "https://picsum.photos/seed/val3/400/400",
-    "https://picsum.photos/seed/val4/400/400",
-    "https://picsum.photos/seed/val5/400/400",
-    "https://picsum.photos/seed/val6/400/400",
-    "https://picsum.photos/seed/val7/400/400",
-    "https://picsum.photos/seed/val8/400/400",
+    "photos/402b5965-fc80-4c9d-a6bb-1ef924a31e14 - Saburi Kapoor.jpeg",
+    "photos/ECFBBC04-C7FC-421A-9199-8D24BB42452D - Saburi Kapoor.jpeg",
+    "photos/IMG_0627 - Saburi Kapoor.jpeg",
+    "photos/IMG_0672 - Saburi Kapoor.jpeg",
+    "photos/IMG_0812 - Saburi Kapoor.jpeg",
+    "photos/IMG_1637 - Saburi Kapoor.jpeg",
+    "photos/IMG_8199 - Saburi Kapoor.jpeg",
+    "photos/IMG_9873 - Saburi Kapoor.jpeg",
   ],
 
     /** Audio URL for Mixtape background music */
-  audioUrl: "audio/exampleaudio.mp3",
+  audioUrl: "audio/Stephen Sanchez - Until I Found You (Official Video).mp3",
 
   /** Receipt line items for "The Love Receipt" template */
   receiptItems: [
