@@ -10,7 +10,6 @@ const Mixtape = () => {
   const [playing, setPlaying] = useState(false);
   const [lyricIndex, setLyricIndex] = useState(0);
   const [showHidden, setShowHidden] = useState(false);
-  const audioRef = useRef(null);
   const handleSkipHover = () => {
     if (!skipRef.current) return;
     const btn = skipRef.current;
@@ -21,6 +20,8 @@ const Mixtape = () => {
     btn.style.top = `${20 + Math.random() * maxY}px`;
     btn.style.zIndex = "999";
   };
+  const audioRef = useRef(null);
+  
 
   const lyrics = config.message.split(/[.!?]+/).filter(Boolean).map((s) => s.trim());
 
