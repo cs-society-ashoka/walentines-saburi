@@ -6,10 +6,21 @@ import { fireConfetti } from "@/lib/confetti";
 
 const Mixtape = () => {
   const [stage, setStage] = useState(0);
+  const skipRef = useRef<HTMLButtonElement>(null);
   const [playing, setPlaying] = useState(false);
   const [lyricIndex, setLyricIndex] = useState(0);
   const [showHidden, setShowHidden] = useState(false);
   const audioRef = useRef(null);
+  const handleSkipHover = () => {
+    if (!skipRef.current) return;
+    const btn = skipRef.current;
+    const maxX = window.innerWidth - 120;
+    const maxY = window.innerHeight - 60;
+    btn.style.position = "fixed";
+    btn.style.left = `${20 + Math.random() * maxX}px`;
+    btn.style.top = `${20 + Math.random() * maxY}px`;
+    btn.style.zIndex = "999";
+  };
 
   const lyrics = config.message.split(/[.!?]+/).filter(Boolean).map((s) => s.trim());
 
@@ -333,13 +344,15 @@ const Mixtape = () => {
                   >
                     Yes! 🎵
                   </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 0.9, opacity: 0.5 }}
-                    className="rounded-lg border-2 px-8 py-3 text-lg font-semibold"
+                  <button
+                    ref={skipRef}
+                    onMouseEnter={handleSkipHover}
+                    onTouchStart={handleSkipHover}
+                    className="rounded-lg border-2 px-8 py-3 text-lg font-semibold transition"
                     style={{ borderColor: "#5c3a1e", color: "#8b6540" }}
                   >
                     Skip
-                  </motion.button>
+                  </button>
                 </div>
                 <p className="mt-4 text-sm" style={{ color: "#8b6540" }}>
                   — {config.senderName}
